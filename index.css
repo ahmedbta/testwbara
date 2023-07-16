@@ -1,0 +1,105 @@
+*{
+box-sizing:border-box;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+#ahmed{
+    color:black;
+    text-align:center;
+    margin-top:2%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+
+  }
+  
+  .section {
+    background-color: grey;
+    border : 3px solid black ;
+    position: relative;
+    padding:1%;
+  }
+  
+  .title {
+    font-weight: bold;
+    border: 3px solid black;
+    border-top-width: 0;
+    border-right-width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .color1 {
+    background-color : rgba(255, 106, 109, 0.5);
+    
+
+  }
+  
+  .color2 {
+    background-color : rgba(200, 18, 21, 0.5);
+    color: #fff;
+
+  }
+  
+  .color3 {
+    background-color : rgba(237, 188, 40, 0.5); 
+ }
+
+
+
+ @media (min-width: 992px) {
+    .section {
+      flex: 1;
+      width:30%;
+    }
+    .section:nth-child(1) {
+        margin-left: 1%;
+      }
+      .section:nth-child(2) {
+        margin-left:1%;
+        margin-right:1%
+      }
+      .section:nth-child(3) {
+        margin-right:1%;
+    
+      }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 47%;
+    }
+    .section:nth-child(1) {
+        margin-left: 2%;
+      }
+      .section:nth-child(2) {
+        margin-left:2%;
+        margin-right:2%
+      }
+  
+    .section:nth-child(3) {
+      flex-basis: 100%;
+      width: 100%;
+      margin-left: 2%;
+      margin-right:2%;
+      margin-top:2%
+
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+      margin-left: 2%;
+      margin-right:2%;
+      margin-top:2%
+
+    }
+    
+}
